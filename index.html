@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <h1>Weather App</h1>
+        <div class="tab-container">
+            <p class="tab" data-userWeather> Your Weather</p>
+            <p class="tab" data-searchWeather>Search Weather</p>
+
+        </div>
+
+        <div class="weather-container">
+            <div class="grant-location-container">
+                <img src="./loc.png" alt="loc" wigth="80" height="80" loading="lazy">
+                <p>grantlocation</p>
+                <p>Allow acess to get Weather information</p>
+                <button class="btn" data-grantAccess>Grant Acess</button>
+            </div>
+
+            <form class="form-container" data-searchForm>
+                <input class="input_class"placeholder="search city" id="name" data-searchInput>
+                <!-- <label for="name" class="label_city">city</label> -->
+                <button class="btn" type="submit" >
+                    <img src="./magnify-1.1s-200px.png" alt="" width="20" height="20" loading="lazy">
+
+                </button>
+            </form>
+            <div class="loading-container">
+                <img src="./Ripple-1s-361px.gif" alt="" width="150" height="150">
+                <p>loading</p>
+            </div>
+
+            <div class="user-info-container">
+                <!--city name and Flag-->
+                <div class="name">
+                    <p data-cityName></p>
+                    <img data-countryIcon>
+                </div>
+                <!-- weather descriptuion-->
+                <p data-weatherDesc></p>
+                <!--weather Icon-->
+                <img data-weatherIcon>
+                <!--temperature-->
+                <p data-temp></p>
+                <!--3 cards - parameters-->
+                <div class="parameter-container">
+                    <!--card 1-->
+                    <div class="parameter">
+                        <img src="./Lovepik_com-401166042-wind.png" alt="" wigth="80" height="80">
+                        <p>Wind Speed</p>
+                        <p data-windSpeed></p>
+                    </div>
+                    <div class="parameter">
+                        <img src="./humidity.png" alt="" wigth="80" height="80">
+                        <p>Humidity</p>
+                        <p data-humidity></p>
+                    </div>
+
+                    <div class="parameter">
+                        <img src="./rain.png" alt="" wigth="80" height="80">
+                        <p>cloud</p>
+                        <p data-cloudiness></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./appp.js">
+
+    </script>
+</body>
+
+</html>
